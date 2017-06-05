@@ -21,7 +21,7 @@ $(document).ready(function(){
 
   function retrieveGifs(searchTerm){
 
-    var url = "http://api.giphy.com/v1/gifs/search";
+    var url = "https://api.giphy.com/v1/gifs/search";
 
     var parameters = $.param({
       'api_key': "dc6zaTOxFJmzC",

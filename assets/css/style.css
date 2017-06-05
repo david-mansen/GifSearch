@@ -1,0 +1,38 @@
+body{
+  background-color: #111;
+}
+
+.container{
+  width: 80%;
+}
+
+.content{
+  width: 95%;
+  margin-left: 0%;
+  margin-right: 3%;
+  margin-top: 3%
+}
+
+.buttons-row{
+  margin-top: 1%;
+}
+
+
+.imgDiv{
+  margin-top: 30px;
+  height: 200px;
+  width: 200px;
+}
+
+img {
+  display: block;
+  max-width:200px;
+  max-height: 200px;
+  width: auto;
+  animation-play-state: paused;
+  height: auto;
+}
+
+.topic-button{
+  margin: 5px 5px 5px 5px;
+}

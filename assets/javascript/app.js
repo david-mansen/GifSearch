@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var topics = ["squirrel","bear","orangutan","giraffe", "squirrel","bear","orangutan","giraffe", "squirrel","bear","orangutan","giraffe", "squirrel","bear","orangutan","giraffe"];
+  var topics = ["squidward","patrick","spongebob","mr krabs"];
 
   function initializeButtons(){
     for(let i=0; i<topics.length; i++){
@@ -26,6 +26,7 @@ $(document).ready(function(){
     var parameters = $.param({
       'api_key': "dc6zaTOxFJmzC",
       'q': searchTerm,
+      'limit': 10
     });
 
     url += '?' + parameters;
@@ -41,7 +42,7 @@ $(document).ready(function(){
         imgDiv.addClass("imgDiv col-sm-4");
 
         var h6 = $("<h6>");
-        h6.text("tesdafdsfdsfdfsdfadft");
+        h6.text("Rating: "+result.data[i].rating);
 
         var image = result.data[i];
 
@@ -71,14 +72,11 @@ $(document).ready(function(){
   });
 
   $("#images").on("click", "img", function(event){
-
     var img = $(this);
     var tempURL = img.attr("src");
     var hiddenURL = img.attr("hidden_url");
     img.attr("src", hiddenURL);
-    img.attr("hiddenURL", tempURL);
-    console.log(tempURL);
-    console.log(hiddenURL);
+    img.attr("hidden_url", tempURL);
   });
 
   initializeButtons();

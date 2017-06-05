@@ -2,6 +2,10 @@ body{
   background-color: #111;
 }
 
+h1,h4,h6,p{
+  color: #eee;
+}
+
 .container{
   width: 80%;
 }
@@ -31,6 +35,11 @@ img {
   width: auto;
   animation-play-state: paused;
   height: auto;
+}
+
+.enlarged{
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .topic-button{
